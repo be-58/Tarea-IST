@@ -2,11 +2,6 @@ pipeline {
 
     agent any
 
-    environment {
-        IMAGE_NAME = "payphone-app"
-        CONTAINER_NAME = "payphone-container"
-    }
-
     stages {
 
         stage('Checkout') {
@@ -15,24 +10,25 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Verificar PHP') {
             steps {
-                bat 'docker build -t %IMAGE_NAME% .'
+                bat 'php -v'
             }
         }
 
-        stage('Test') {
+        stage('Verificar Sintaxis') {
             steps {
-                bat 'php -v'
+                bat '''
+                php -l index.php
+                php -l response.php
+                '''
             }
         }
 
         stage('Deploy') {
             steps {
                 bat '''
-                docker stop %CONTAINER_NAME%
-                docker rm %CONTAINER_NAME%
-                docker run -d --name %CONTAINER_NAME% -p 8081:80 %IMAGE_NAME%
+                xcopy /E /Y * C:\\xampp\\htdocs\\proyecto-payphone\\
                 '''
             }
         }
@@ -40,15 +36,13 @@ pipeline {
     }
 
     post {
-
         success {
-            echo 'Despliegue realizado correctamente.'
+            echo 'Proyecto PayPhone desplegado correctamente.'
         }
 
         failure {
-            echo 'Error durante el pipeline.'
+            echo 'Ocurrió un error durante el despliegue.'
         }
-
     }
 
 }
