@@ -45,7 +45,7 @@ pipeline {
             steps {
                 sh '''
                     sleep 3
-                    curl -f http://localhost:${APP_PORT}/index.php || exit 1
+                    docker exec ${CONTAINER_NAME} curl -f http://localhost/index.php || exit 1
                     echo "Deploy verificado correctamente"
                 '''
             }
