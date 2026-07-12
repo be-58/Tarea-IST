@@ -10,7 +10,7 @@ $productos = [
 ?>
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head>2   |
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tienda Uleam Prueba — PayPhone</title>
@@ -121,7 +121,7 @@ $productos = [
 
 <div class="container">
   <h1>Tienda Uleam Prueba</h1>
-  <p class="subtitle">Integración con PayPhone SDK v2.0 · Dayana Anchundia · Modo Sandbox</p>
+  <p class="subtitle">Integración con PayPhone SDK v2.0 · Dayana Anchundia · Modo Sandbox · Build automático </p>
 
   <div class="tabs">
     <button class="tab active" onclick="switchTab('tienda')">🛍 Tienda</button>
