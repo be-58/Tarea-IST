@@ -23,3 +23,4 @@ Proyecto desarrollado en PHP utilizando la API Sandbox de PayPhone.
 
 - ## Integrantes
 - Johan Chavez Bailon
+- genesis pin mero 
