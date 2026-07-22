@@ -26,4 +26,4 @@ Proyecto desarrollado en PHP utilizando la API Sandbox de PayPhone.
 - Genesis Pin Mero 
 - Sergio Anchundia Cholango
 - Berenice Quijije Anchundia
--Alisson Iñiguez 
+- Alisson Iñiguez 
