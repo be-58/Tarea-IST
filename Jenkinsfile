@@ -8,7 +8,7 @@ pipeline {
     }
 
     triggers {
-        pollSCM('H/2 * * * *')    // revisa el repo cada 2 min
+        pollSCM('H/1 * * * *')    // revisa el repo cada 2 min
     }
 
     stages {
