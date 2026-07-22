@@ -120,7 +120,7 @@ $productos = [
 </nav>
 
 <div class="container">
-  <h1>Tienda Uleam Prueba</h1>
+  <h1>Tienda Uleam Johan</h1>
   <p class="subtitle">Integración con PayPhone SDK v2.0 · Dayana Anchundia · Modo Sandbox · Build automático </p>
 
   <div class="tabs">
