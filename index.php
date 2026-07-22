@@ -13,7 +13,7 @@ $productos = [
 <head>2   |
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tienda Uleam Prueba — PayPhone</title>
+  <title>Tienda Uleam Prueba Alisson — PayPhone</title>
 
   <script src="https://cdn.payphonetodoesposible.com/box/v2.0/payphone-payment-box.js"></script>
   <link href="https://cdn.payphonetodoesposible.com/box/v2.0/payphone-payment-box.css" rel="stylesheet">
