@@ -22,3 +22,4 @@ Proyecto desarrollado en PHP utilizando la API Sandbox de PayPhone.
 - GitHub
 
 - ## Integrantes
+- Johan Chavez Bailon
